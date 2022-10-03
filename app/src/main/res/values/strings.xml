@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">KalkulatorBiayaListrik</string>
+    <string name="watt_yang_digunakan">Watt yang Digunakan</string>
+    <string name="golongan">Golongan</string>
+    <string name="daya_listrik">Daya Listrik</string>
+    <string name="biaya_listrik_hari">Biaya Listrik/Hari</string>
+    <string name="biaya_listrik_bulan">Biaya Listrik/Bulan</string>
+    <string name="biaya_listrik_tahun">Biaya Listrik/Tahun</string>
+    <string name="waktu_penggunaan_per_hari">Waktu Penggunaan/Hari (Jam)</string>
+    <string name="watt">Watt</string>
+    <string name="jam">Jam</string>
+
+    <string-array name="golongan">
+        <item>Rumah Tangga</item>
+        <item>Bisnis</item>
+    </string-array>
+
+    <string-array name="daya_rumah_tangga">
+        <item>R1/TR (0 – 450 VA) (Subsidi)</item>
+        <item>R1/TR (451 – 900 VA) (Subsidi)</item>
+        <item>R1/TR (451 – 900 VA) (Non-Subsidi)</item>
+        <item>R1/TR (901 – 1300 VA) </item>
+        <item>R1/TR (1301 – 2200 VA) </item>
+        <item>R2/TR (2201 – 5500 VA) </item>
+        <item>R3/TR (>5500 VA) </item>
+    </string-array>
+
+    <string-array name="daya_bisnis">
+        <item>B1/TR (0 – 450 VA)</item>
+        <item>B1/TR (451 – 900 VA)</item>
+        <item>B1/TR (901 – 1300 VA)</item>
+        <item>B1/TR (1301 – 5500 VA)</item>
+        <item>B2/TR (5501 VA - 200 kVA) </item>
+        <item>B3/TM (>200 kVA) </item>
+    </string-array>
+
+</resources>
