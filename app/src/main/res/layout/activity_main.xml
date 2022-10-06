@@ -10,8 +10,8 @@
         android:id="@+id/tvWatt"
         android:layout_width="136dp"
         android:layout_height="24dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
         android:text="@string/watt_yang_digunakan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,9 +20,9 @@
         android:id="@+id/tvPenggunaan_Jam"
         android:layout_width="154dp"
         android:layout_height="37dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:text="@string/waktu_penggunaan_per_hari"
-        app:layout_constraintEnd_toEndOf="@+id/tvWatt"
+        app:layout_constraintStart_toStartOf="@+id/tvWatt"
         app:layout_constraintTop_toBottomOf="@+id/tvWatt" />
 
     <TextView
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/biaya_listrik_tahun"
-        app:layout_constraintEnd_toEndOf="@+id/tvBiayaListrikBulan"
+        app:layout_constraintStart_toStartOf="@+id/tvBiayaListrikBulan"
         app:layout_constraintTop_toBottomOf="@+id/tvBiayaListrikBulan" />
 
     <TextView
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/biaya_listrik_bulan"
-        app:layout_constraintEnd_toEndOf="@+id/tvBiayaListrikHari"
+        app:layout_constraintStart_toStartOf="@+id/tvBiayaListrikHari"
         app:layout_constraintTop_toBottomOf="@+id/tvBiayaListrikHari" />
 
     <TextView
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:text="@string/biaya_listrik_hari"
-        app:layout_constraintEnd_toEndOf="@+id/tvDayaListrik"
+        app:layout_constraintStart_toStartOf="@+id/tvDayaListrik"
         app:layout_constraintTop_toBottomOf="@+id/tvDayaListrik" />
 
     <TextView
@@ -58,14 +58,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="@string/daya_listrik"
-        app:layout_constraintEnd_toEndOf="@+id/tvGolongan"
+        app:layout_constraintStart_toStartOf="@+id/tvGolongan"
         app:layout_constraintTop_toBottomOf="@+id/tvGolongan" />
 
     <EditText
         android:id="@+id/etWatt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="18dp"
         android:ems="10"
         android:hint="@string/watt"
         android:importantForAutofill="no"
@@ -94,21 +94,22 @@
         android:id="@+id/spinnerGolongan"
         android:layout_width="210dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="8dp"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="@+id/tvGolongan"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etJam"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/tvGolongan"
         app:layout_constraintTop_toTopOf="@+id/tvGolongan"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.586"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/tvGolongan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:text="@string/golongan"
-        app:layout_constraintEnd_toEndOf="@+id/tvPenggunaan_Jam"
+        app:layout_constraintStart_toStartOf="@+id/tvPenggunaan_Jam"
         app:layout_constraintTop_toBottomOf="@+id/tvPenggunaan_Jam" />
 
     <Spinner
@@ -119,6 +120,36 @@
         app:layout_constraintBottom_toBottomOf="@+id/tvDayaListrik"
         app:layout_constraintEnd_toEndOf="@+id/spinnerGolongan"
         app:layout_constraintTop_toTopOf="@+id/tvDayaListrik"
-        app:layout_constraintVertical_bias="0.517" />
+        app:layout_constraintVertical_bias="0.517"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvBiayaListrikHariAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:text="@string/biaya_listrik_hari_amount"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBiayaListrikHari"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvBiayaListrikHari" />
+
+    <TextView
+        android:id="@+id/tvBiayaListrikBulanAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/biaya_listrik_bulan_amount"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBiayaListrikBulan"
+        app:layout_constraintStart_toStartOf="@+id/tvBiayaListrikHariAmount"
+        app:layout_constraintTop_toTopOf="@+id/tvBiayaListrikBulan" />
+
+    <TextView
+        android:id="@+id/tvBiayaListrikTahunAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/biaya_listrik_tahun_amount"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBiayaListrikTahun"
+        app:layout_constraintStart_toStartOf="@+id/tvBiayaListrikBulanAmount"
+        app:layout_constraintTop_toTopOf="@+id/tvBiayaListrikTahun"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

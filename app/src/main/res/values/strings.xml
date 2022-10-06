@@ -9,8 +9,11 @@
     <string name="waktu_penggunaan_per_hari">Waktu Penggunaan/Hari (Jam)</string>
     <string name="watt">Watt</string>
     <string name="jam">Jam</string>
+    <string name="biaya_listrik_hari_amount">Rp 31.530,00</string>
+    <string name="biaya_listrik_bulan_amount">Rp 315.530,00</string>
+    <string name="biaya_listrik_tahun_amount">Rp 3.155.530,00</string>
 
-    <string-array name="golongan">
+    <string-array name="array_golongan">
         <item>Rumah Tangga</item>
         <item>Bisnis</item>
     </string-array>
